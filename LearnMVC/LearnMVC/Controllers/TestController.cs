@@ -27,9 +27,12 @@ namespace LearnMVC.Controllers
             //ViewData["Employee"] = emp;
             //return View("MyView");
 
+            //Commented the code
             //Passing the data to View using the ViewBag
-            ViewBag.Employee = emp;
-            return View("MyView");
+            //ViewBag.Employee = emp;
+            //return View("MyView");
+
+            return View("MyView", emp);
         }
     }
 }

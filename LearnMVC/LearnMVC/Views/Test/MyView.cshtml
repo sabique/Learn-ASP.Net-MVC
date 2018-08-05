@@ -1,4 +1,4 @@
-﻿
+﻿@model LearnMVC.Models.Employee
 @{
     Layout = null;
 }
@@ -20,11 +20,18 @@
             //LearnMVC.Models.Employee emp = (LearnMVC.Models.Employee)ViewData["Employee"];
 
             //Using the ViewBag to display the data from the controller
-            LearnMVC.Models.Employee emp = (LearnMVC.Models.Employee)ViewBag.Employee;
+            //LearnMVC.Models.Employee emp = (LearnMVC.Models.Employee)ViewBag.Employee;
         }
     <b>Employee Details:</b><br />
-        Employee Name: @emp.FirstName @emp.LastName <br />
-        Employee Salary: @emp.Salary.ToString("C")
+        Employee Name: @Model.FirstName @Model.LastName <br />
+        @if(@Model.Salary > 15000)
+        {
+            <span style="background-color:yellow">Salary: @Model.Salary.ToString("C")</span>
+        }
+        else
+        {
+            <span style="background-color:green">Salary: @Model.Salary.ToString("C")</span>
+        }
     </div>
 </body>
 </html>
