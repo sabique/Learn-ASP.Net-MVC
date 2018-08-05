@@ -13,5 +13,10 @@ namespace LearnMVC.Controllers
         {
             return "Huraay! We have successfully run the ASP.Net MVC project.";
         }
+
+        public ActionResult GetView()
+        {
+            return View("MyView");
+        }
     }
 }
