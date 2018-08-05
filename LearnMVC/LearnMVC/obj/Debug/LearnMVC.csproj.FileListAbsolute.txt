@@ -35,6 +35,5 @@ D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.WebPages.Depl
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.WebPages.Razor.xml
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Antlr3.Runtime.pdb
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Newtonsoft.Json.xml
-D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\obj\Debug\LearnMVC.csprojResolveAssemblyReference.cache
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\obj\Debug\LearnMVC.dll
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\obj\Debug\LearnMVC.pdb

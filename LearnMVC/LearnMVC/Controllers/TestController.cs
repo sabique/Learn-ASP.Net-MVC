@@ -22,8 +22,13 @@ namespace LearnMVC.Controllers
             emp.LastName = "Khan";
             emp.Salary = 10000;
 
-            ViewData["Employee"] = emp;
+            //Commented the code
+            //Uncomment the code if you need to pass the data to View using the ViewData
+            //ViewData["Employee"] = emp;
+            //return View("MyView");
 
+            //Passing the data to View using the ViewBag
+            ViewBag.Employee = emp;
             return View("MyView");
         }
     }

@@ -16,11 +16,15 @@
     </div>
     <div>
         @{ 
-            LearnMVC.Models.Employee emp = (LearnMVC.Models.Employee)ViewData["Employee"];
+            //Using the ViewData to display the data from the controller
+            //LearnMVC.Models.Employee emp = (LearnMVC.Models.Employee)ViewData["Employee"];
+
+            //Using the ViewBag to display the data from the controller
+            LearnMVC.Models.Employee emp = (LearnMVC.Models.Employee)ViewBag.Employee;
         }
     <b>Employee Details:</b><br />
         Employee Name: @emp.FirstName @emp.LastName <br />
-        Employee Salary: @emp.Salary.ToString("C");
+        Employee Salary: @emp.Salary.ToString("C")
     </div>
 </body>
 </html>
