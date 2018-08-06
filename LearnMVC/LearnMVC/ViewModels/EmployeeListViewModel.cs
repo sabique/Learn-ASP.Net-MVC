@@ -8,6 +8,8 @@ namespace LearnMVC.ViewModels
     public class EmployeeListViewModel
     {
         public List<EmployeeViewModel> Employees { get; set; }
-        public string UserName { get; set; }
+        #region Removed the property
+        //public string UserName { get; set; } 
+        #endregion
     }
 }

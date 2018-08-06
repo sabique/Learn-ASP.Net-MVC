@@ -14,6 +14,8 @@ D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\LearnMVC.dll.config
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\LearnMVC.dll
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\LearnMVC.pdb
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Antlr3.Runtime.dll
+D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\EntityFramework.dll
+D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\EntityFramework.SqlServer.dll
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Microsoft.Web.Infrastructure.dll
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Newtonsoft.Json.dll
@@ -25,7 +27,10 @@ D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.WebPages.Depl
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.WebPages.dll
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.WebPages.Razor.dll
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\WebGrease.dll
+D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\EntityFramework.xml
+D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\EntityFramework.SqlServer.xml
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Newtonsoft.Json.xml
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.Helpers.xml
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.Mvc.xml
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.Optimization.xml
@@ -34,7 +39,5 @@ D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.WebPages.xml
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.WebPages.Deployment.xml
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\System.Web.WebPages.Razor.xml
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Antlr3.Runtime.pdb
-D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\bin\Newtonsoft.Json.xml
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\obj\Debug\LearnMVC.dll
 D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\obj\Debug\LearnMVC.pdb
-D:\Projects\Git\Learn-ASP.Net-MVC\LearnMVC\LearnMVC\obj\Debug\LearnMVC.csprojResolveAssemblyReference.cache

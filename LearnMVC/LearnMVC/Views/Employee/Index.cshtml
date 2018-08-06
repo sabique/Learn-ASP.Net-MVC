@@ -1,0 +1,67 @@
+﻿@*Using the model for the strongly typed view*@
+@*@model LearnMVC.Models.Employee*@
+
+@*Using the ViewModel for the strongly typed view*@
+@*@model LearnMVC.ViewModels.EmployeeViewModel*@
+
+@model LearnMVC.ViewModels.EmployeeListViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+</head>
+<body>
+    @* Removed the below code *@
+    @*Hello @Model.UserName
+    <hr />
+    <div> 
+        Welcome to MVC 5 step by step learning.
+    </div>*@
+    <div>
+        @{ 
+//Using the ViewData to display the data from the controller
+//LearnMVC.Models.Employee emp = (LearnMVC.Models.Employee)ViewData["Employee"];
+
+//Using the ViewBag to display the data from the controller
+//LearnMVC.Models.Employee emp = (LearnMVC.Models.Employee)ViewBag.Employee;
+        }
+    <b>Employee Details:</b><br />
+
+        @* The below code was used with the ViewModel *@
+        @*Employee Name: @Model.EmployeeName <br />
+        <span style="background-color:@Model.SalaryColor">Employee Salary: @Model.Salary</span>*@
+
+        @* The below code was used with the ViewData/ViewBag/Model *@
+        @*Employee Name: @Model.FirstName @Model.LastName <br />
+        @if(@Model.Salary > 15000)
+        {
+            <span style="background-color:yellow">Salary: @Model.Salary.ToString("C")</span>
+        }
+        else
+        {
+            <span style="background-color:green">Salary: @Model.Salary.ToString("C")</span>
+        }*@
+
+        <table>
+            <tr>
+                <th>Employee Name</th>
+                <th>Salary</th>
+            </tr>
+            @foreach (var item in Model.Employees)
+            {
+                <tr>
+                    <td>@item.EmployeeName</td>
+                    <td style="background-color:@item.SalaryColor">@item.Salary</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
