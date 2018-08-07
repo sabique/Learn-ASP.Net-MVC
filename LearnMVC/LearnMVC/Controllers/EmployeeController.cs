@@ -87,5 +87,10 @@ namespace LearnMVC.Controllers
             return View("Index", employeeListViewModel); 
             #endregion
         }
+
+        public ActionResult AddNew()
+        {
+            return View("CreateEmployee");
+        }
     }
 }
