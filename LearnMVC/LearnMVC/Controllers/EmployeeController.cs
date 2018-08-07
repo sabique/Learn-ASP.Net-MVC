@@ -84,13 +84,18 @@ namespace LearnMVC.Controllers
 
             //Updated the View name to Index from MyView
             //return View("MyView", employeeListViewModel); 
-            return View("Index", employeeListViewModel); 
+            return View("Index", employeeListViewModel);
             #endregion
         }
 
         public ActionResult AddNew()
         {
             return View("CreateEmployee");
+        }
+
+        public string SaveEmployee(Employee e)
+        {
+            return e.FirstName + " | " + e.LastName + " | " + e.Salary;
         }
     }
 }
