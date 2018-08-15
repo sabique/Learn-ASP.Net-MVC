@@ -9,6 +9,13 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>CreateEmployee</title>
+    <script>
+        function ResetForm() {
+            document.getElementById('txtFName').value = "";
+            document.getElementById('txtLName').value = "";
+            document.getElementById('txtSalary').value = "";
+        }
+    </script>
 </head>
 <body>
     <div> 
@@ -16,8 +23,9 @@
             First Name: <input type="text" id="txtFName" name="FirstName" value="" /><br />
             Last Name : <input type="text" id="txtLName" name="LastName" value="" /><br />
             Salary    : <input type="text" id="txtSalary" name="Salary" value="" /><br />
-            <input type="submit" name="btnSave" value="Save Employee" />
-            <input type="button" name="btnReset" value="Reset" />
+            <input type="submit" name="btnSubmit" value="Save Employee" />
+            <input type="button" name="btnReset" value="Reset" onclick="ResetForm();" />
+            <input type="submit" name="btnSubmit" value="Cancel" />
         </form>
     </div>
 </body>
