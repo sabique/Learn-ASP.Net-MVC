@@ -39,5 +39,14 @@ namespace LearnMVC.Models
             return salesDAL.Employees.ToList();
             #endregion
         }
+
+        public Employee SaveEmployee(Employee e)
+        {
+            SalesERPDAL salesDal = new SalesERPDAL();
+
+            salesDal.Employees.Add(e);
+            salesDal.SaveChanges();
+            return e;
+        }
     }
 }

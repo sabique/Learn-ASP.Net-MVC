@@ -98,7 +98,13 @@ namespace LearnMVC.Controllers
             switch (btnSubmit)
             {
                 case "Save Employee":
-                    return Content(e.FirstName + " | " + e.LastName + " | " + e.Salary);
+                    #region Code to display the submitted values
+                    //return Content(e.FirstName + " | " + e.LastName + " | " + e.Salary); 
+                    #endregion
+
+                    EmployeeBusinessLayer empBal = new EmployeeBusinessLayer();
+                    empBal.SaveEmployee(e);
+                    return RedirectToAction("Index");
                 case "Cancel":
                     return RedirectToAction("Index");
             }
