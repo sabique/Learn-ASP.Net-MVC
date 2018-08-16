@@ -9,6 +9,11 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>CreateEmployee</title>
+    <style>
+        .red-color{
+            color: red;
+        }
+    </style>
     <script>
         function ResetForm() {
             document.getElementById('txtFName').value = "";
@@ -20,12 +25,42 @@
 <body>
     <div> 
         <form action="/Employee/SaveEmployee" method="post">
-            First Name: <input type="text" id="txtFName" name="FirstName" value="" /><br />
-            Last Name : <input type="text" id="txtLName" name="LastName" value="" /><br />
-            Salary    : <input type="text" id="txtSalary" name="Salary" value="" /><br />
-            <input type="submit" name="btnSubmit" value="Save Employee" />
-            <input type="button" name="btnReset" value="Reset" onclick="ResetForm();" />
-            <input type="submit" name="btnSubmit" value="Cancel" />
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" id="txtFName" name="FirstName" value="" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right" class="red-color">
+                        @Html.ValidationMessage("FirstName")
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" id="txtLName" name="LastName" value="" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right" class="red-color">
+                        @Html.ValidationMessage("LastName")
+                    </td>
+                </tr>
+                <tr>
+                    <td>Salary:</td>
+                    <td><input type="text" id="txtSalary" name="Salary" value="" /><br /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right" class="red-color">
+                        @Html.ValidationMessage("Salary")
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="btnSubmit" value="Save Employee" />
+                        <input type="button" name="btnReset" value="Reset" onclick="ResetForm();" />
+                        <input type="submit" name="btnSubmit" value="Cancel" />
+                    </td>
+                </tr>
+            </table>
         </form>
     </div>
 </body>

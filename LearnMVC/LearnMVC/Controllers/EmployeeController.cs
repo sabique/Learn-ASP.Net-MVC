@@ -102,9 +102,17 @@ namespace LearnMVC.Controllers
                     //return Content(e.FirstName + " | " + e.LastName + " | " + e.Salary); 
                     #endregion
 
-                    EmployeeBusinessLayer empBal = new EmployeeBusinessLayer();
-                    empBal.SaveEmployee(e);
-                    return RedirectToAction("Index");
+                    if(ModelState.IsValid)
+                    {
+                        EmployeeBusinessLayer empBal = new EmployeeBusinessLayer();
+                        empBal.SaveEmployee(e);
+                        return RedirectToAction("Index");
+                    }
+                    else
+                    {
+                        return View("CreateEmployee");
+                    }
+                    
                 case "Cancel":
                     return RedirectToAction("Index");
             }
